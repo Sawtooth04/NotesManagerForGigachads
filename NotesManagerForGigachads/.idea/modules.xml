@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/NotesManagerForGigachads.iml" filepath="$PROJECT_DIR$/NotesManagerForGigachads.iml" />
+      <module fileurl="file://$PROJECT_DIR$/notes-controller/notes-controller.iml" filepath="$PROJECT_DIR$/notes-controller/notes-controller.iml" />
+      <module fileurl="file://$PROJECT_DIR$/notes-dao/notes-dao.iml" filepath="$PROJECT_DIR$/notes-dao/notes-dao.iml" />
+      <module fileurl="file://$PROJECT_DIR$/notes-gui/notes-gui.iml" filepath="$PROJECT_DIR$/notes-gui/notes-gui.iml" />
+      <module fileurl="file://$PROJECT_DIR$/notes-gui-resizer/notes-gui-resizer.iml" filepath="$PROJECT_DIR$/notes-gui-resizer/notes-gui-resizer.iml" />
+      <module fileurl="file://$PROJECT_DIR$/notes-repository/notes-repository.iml" filepath="$PROJECT_DIR$/notes-repository/notes-repository.iml" />
+      <module fileurl="file://$PROJECT_DIR$/notes-service/notes-service.iml" filepath="$PROJECT_DIR$/notes-service/notes-service.iml" />
+    </modules>
+  </component>
+</project>
