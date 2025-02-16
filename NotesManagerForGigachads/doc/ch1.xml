@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+        <!DOCTYPE chapter PUBLIC "-//OASIS//DTD DocBook XML V4.4//EN"
+                "http://www.oasis-open.org/docbook/xml/4.4/docbookx.dtd">
+<chapter lang="ru">
+    <title>Документация модулей</title>
+    <sect1>
+        <title>Модуль слоя контроллеров</title>
+        <sect2>
+            <title>Main</title>
+            <para>Точка входа</para>
+        </sect2>
+    </sect1>
+    <sect1>
+        <title>Модуль слоя доступа к данным</title>
+        <sect2>
+            <title>Main</title>
+            <para>Точка входа</para>
+        </sect2>
+    </sect1>
+    <sect1>
+        <title>Модуль слоя представления</title>
+        <sect2>
+            <title>Main</title>
+            <para>Точка входа</para>
+        </sect2>
+    </sect1>
+    <sect1>
+        <title>Модуль слоя масштабирования представления</title>
+        <sect2>
+            <title>Main</title>
+            <para>Точка входа</para>
+        </sect2>
+    </sect1>
+    <sect1>
+        <title>Модуль слоя доступа к данным домена</title>
+        <sect2>
+            <title>Main</title>
+            <para>Точка входа</para>
+        </sect2>
+    </sect1>
+    <sect1>
+        <title>Модуль слоя бизнес логики</title>
+        <sect2>
+            <title>Main</title>
+            <para>Точка входа</para>
+        </sect2>
+    </sect1>
+</chapter>
