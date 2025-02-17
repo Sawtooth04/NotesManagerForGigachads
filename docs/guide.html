@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Документация для приложения "Заметки"</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      margin: 0;
+      padding: 0;
+      background-color: #f9f9f9;
+      color: #333;
+    }
+    header {
+      background-color: #2c3e50;
+      color: #fff;
+      padding: 20px;
+      text-align: center;
+    }
+    nav {
+      background-color: #34495e;
+      padding: 10px;
+      text-align: center;
+    }
+    nav a {
+      color: #fff;
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    nav a:hover {
+      text-decoration: underline;
+    }
+    .container {
+      max-width: 800px;
+      margin: 20px auto;
+      padding: 20px;
+      background-color: #fff;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      border-radius: 8px;
+    }
+    h1, h2 {
+      color: #2c3e50;
+    }
+    h1 {
+      margin-bottom: 20px;
+    }
+    h2 {
+      margin-top: 30px;
+      border-bottom: 2px solid #34495e;
+      padding-bottom: 5px;
+      cursor: pointer;
+    }
+    h2:hover {
+      color: #3498db;
+    }
+    ul {
+      list-style-type: disc;
+      margin-left: 20px;
+    }
+    ul ul {
+      list-style-type: circle;
+    }
+    code {
+      background-color: #f4f4f4;
+      padding: 2px 5px;
+      border-radius: 3px;
+      font-family: monospace;
+    }
+    footer {
+      text-align: center;
+      margin-top: 40px;
+      padding: 10px;
+      background-color: #34495e;
+      color: #fff;
+    }
+    .section-content {
+      display: none;
+      margin-left: 20px;
+    }
+    .section-content.active {
+      display: block;
+    }
+  </style>
+  <script>
+    function toggleSection(sectionId) {
+      const section = document.getElementById(sectionId);
+      section.classList.toggle("active");
+    }
+  </script>
+</head>
+<body>
+  <header>
+    <h1>Документация для приложения "Заметки"</h1>
+  </header>
+  <nav>
+    <a href="#intro">Введение</a>
+    <a href="#create-notes">Создание заметок</a>
+    <a href="#books">Объединение в книги</a>
+    <a href="#export">Экспорт в PDF</a>
+    <a href="#tags">Ярлыки</a>
+  </nav>
+  <div class="container">
+    <!-- Раздел 1: Введение -->
+    <section>
+      <h2 onclick="toggleSection('intro')">1. Введение</h2>
+      <div id="intro" class="section-content">
+        <p>Приложение "Заметки" позволяет создавать, организовывать и управлять заметками. С его помощью вы можете:</p>
+        <ul>
+          <li>Создавать и редактировать заметки.</li>
+          <li>Объединять заметки в книги.</li>
+          <li>Экспортировать заметки в PDF.</li>
+          <li>Использовать ярлыки для быстрого поиска.</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Раздел 2: Создание заметок -->
+    <section>
+      <h2 onclick="toggleSection('create-notes')">2. Создание и управление заметками</h2>
+      <div id="create-notes" class="section-content">
+        <h3>2.1. Создание новой заметки</h3>
+        <p>Чтобы создать новую заметку:</p>
+        <ol>
+          <li>Нажмите кнопку <code>Новая заметка</code> на главном экране.</li>
+          <li>Введите заголовок и текст заметки.</li>
+          <li>Сохраните заметку, нажав кнопку <code>Сохранить</code>.</li>
+        </ol>
+
+        <h3>2.2. Редактирование заметки</h3>
+        <p>Чтобы отредактировать заметку:</p>
+        <ol>
+          <li>Выберите заметку из списка.</li>
+          <li>Нажмите кнопку <code>Редактировать</code>.</li>
+          <li>Внесите изменения и сохраните их.</li>
+        </ol>
+
+        <h3>2.3. Удаление заметки</h3>
+        <p>Чтобы удалить заметку:</p>
+        <ol>
+          <li>Выберите заметку из списка.</li>
+          <li>Нажмите кнопку <code>Удалить</code>.</li>
+          <li>Подтвердите удаление.</li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- Раздел 3: Объединение заметок в книги -->
+    <section>
+      <h2 onclick="toggleSection('books')">3. Объединение заметок в книги</h2>
+      <div id="books" class="section-content">
+        <h3>3.1. Создание новой книги</h3>
+        <p>Чтобы создать книгу:</p>
+        <ol>
+          <li>Нажмите кнопку <code>Новая книга</code>.</li>
+          <li>Введите название книги.</li>
+          <li>Перетащите заметки в книгу или выберите их из списка.</li>
+          <li>Сохраните книгу.</li>
+        </ol>
+
+        <h3>3.2. Редактирование книги</h3>
+        <p>Чтобы отредактировать книгу:</p>
+        <ol>
+          <li>Выберите книгу из списка.</li>
+          <li>Нажмите кнопку <code>Редактировать</code>.</li>
+          <li>Добавьте или удалите заметки.</li>
+          <li>Сохраните изменения.</li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- Раздел 4: Экспорт в PDF -->
+    <section>
+      <h2 onclick="toggleSection('export')">4. Экспорт заметок в PDF</h2>
+      <div id="export" class="section-content">
+        <h3>4.1. Экспорт одной заметки</h3>
+        <p>Чтобы экспортировать заметку:</p>
+        <ol>
+          <li>Выберите заметку из списка.</li>
+          <li>Нажмите кнопку <code>Экспорт в PDF</code>.</li>
+          <li>Выберите место сохранения файла и нажмите <code>Сохранить</code>.</li>
+        </ol>
+
+        <h3>4.2. Экспорт книги</h3>
+        <p>Чтобы экспортировать книгу:</p>
+        <ol>
+          <li>Выберите книгу из списка.</li>
+          <li>Нажмите кнопку <code>Экспорт в PDF</code>.</li>
+          <li>Выберите место сохранения файла и нажмите <code>Сохранить</code>.</li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- Раздел 5: Ярлыки -->
+    <section>
+      <h2 onclick="toggleSection('tags')">5. Использование ярлыков</h2>
+      <div id="tags" class="section-content">
+        <h3>5.1. Добавление ярлыков</h3>
+        <p>Чтобы добавить ярлык:</p>
+        <ol>
+          <li>Откройте заметку или книгу.</li>
+          <li>Нажмите кнопку <code>Добавить ярлык</code>.</li>
+          <li>Введите название ярлыка и сохраните.</li>
+        </ol>
+
+        <h3>5.2. Поиск по ярлыкам</h3>
+        <p>Чтобы найти заметки по ярлыку:</p>
+        <ol>
+          <li>Введите название ярлыка в строке поиска.</li>
+          <li>Приложение отобразит все заметки и книги, связанные с этим ярлыком.</li>
+        </ol>
+      </div>
+    </section>
+  </div>
+  <footer>
+    <p>&copy; 2025 NotesManagerForGigachads. Все права защищены.</p>
+  </footer>
+</body>
+</html>
